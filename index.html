@@ -1,577 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <title>Satu Poin — Agensi Media Sosial</title>
-    <meta
-      name="description"
-      content="Satu Poin, agensi media sosial: manajemen Instagram & TikTok, produksi konten, Meta Ads, TikTok Ads, KOL, dan live streaming."
-    />
-    <meta name="theme-color" content="#0A0E17" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!-- Pratinjau saat link dibagikan di WhatsApp / Instagram / Facebook.
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Satu Poin — Agensi Media Sosial</title>
+<meta name="description" content="Satu Poin, agensi media sosial: manajemen Instagram & TikTok, produksi konten, Meta Ads, TikTok Ads, KOL, dan live streaming.">
+<meta name="theme-color" content="#0A0E17">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- Pratinjau saat link dibagikan di WhatsApp / Instagram / Facebook.
      Ganti https://satupoin.vercel.app dengan alamat situs Anda yang sebenarnya. -->
-    <link rel="canonical" href="https://satupoin.vercel.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Satu Poin" />
-    <meta property="og:title" content="Satu Poin — Agensi Media Sosial" />
-    <meta
-      property="og:description"
-      content="Manajemen Instagram &amp; TikTok, produksi konten, Meta Ads, TikTok Ads, KOL, dan live streaming."
-    />
-    <meta property="og:url" content="https://satupoin.vercel.app/" />
-    <meta
-      property="og:image"
-      content="https://satupoin.vercel.app/og-image.jpg"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="id_ID" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-    />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <div id="top"></div>
+<link rel="canonical" href="https://satupoin.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Satu Poin">
+<meta property="og:title" content="Satu Poin — Agensi Media Sosial">
+<meta property="og:description" content="Manajemen Instagram &amp; TikTok, produksi konten, Meta Ads, TikTok Ads, KOL, dan live streaming.">
+<meta property="og:url" content="https://satupoin.vercel.app/">
+<meta property="og:image" content="https://satupoin.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<div id="top"></div>
 
-    <header class="hero">
-      <div class="dots" aria-hidden="true"></div>
-      <div class="hero-art" aria-hidden="true">
-        <img
-          src="/assets/img/mark.webp"
-          width="700"
-          height="828"
-          alt=""
-          fetchpriority="high"
-        />
-        <span class="ripple"></span><span class="ripple"></span
-        ><span class="ripple"></span>
+<header class="hero">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="hero-art" aria-hidden="true">
+    <img src="/assets/img/mark.webp" width="700" height="828" alt="" fetchpriority="high">
+    <span class="ripple"></span><span class="ripple"></span><span class="ripple"></span>
+  </div>
+
+  <nav class="nav" aria-label="Navigasi utama">
+    <a href="#top" aria-label="Satu Poin, kembali ke atas"><img class="logo" src="/assets/img/logo-white.png" width="400" height="235" alt="Satu Poin"></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <!-- <a href="#alur">Alur Kerja</a> -->
+      <!-- <a href="#portfolio">Portfolio</a> -->
+      <!-- <a href="#faq">FAQ</a> -->
+    </div>
+    <a class="btn btn-light navcta" href="#contact">Get In Touch<span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <button class="menubtn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobmenu">
+      <svg class="i-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <div class="mobmenu" id="mobmenu" hidden>
+    <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    <!-- <a href="#alur">Alur Kerja</a> -->
+    <!-- <a href="#portfolio">Portfolio</a> -->
+    <!-- <a href="#faq">FAQ</a> -->
+    <a class="btn btn-light" href="#contact">Get In Touch<span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+
+  <div class="hero-body">
+    <div>
+      <p class="hello fade-in">Halo, kami Satu Poin</p>
+      <h1 class="h1 disp"><span class="line"><span>Agensi media</span></span><span class="line"><span>sosial yang</span></span><span class="line"><span>tepat sasaran</span></span></h1>
+    </div>
+    <div class="hero-right fade-in">
+      <p class="lead disp">Satu fokus: brand Anda tumbuh.</p>
+      <p class="sub">Kami mengelola Instagram, TikTok, dan iklan berbayar brand Anda, mulai dari kalender konten sampai laporan performa setiap bulan.</p>
+    </div>
+  </div>
+
+  <ul class="svc fade-in">
+    <li><span class="wdot"></span>Manajemen Instagram &amp; TikTok</li>
+    <li><span class="wdot"></span>Produksi konten video pendek</li>
+    <li><span class="wdot"></span>Meta Ads &amp; TikTok Ads</li>
+    <li><span class="wdot"></span>KOL &amp; live streaming</li>
+  </ul>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="strip">
+    <p class="strip-label">Platform yang kami kelola setiap hari</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <ul>
+          <li>Instagram</li><li>TikTok</li><li>YouTube Shorts</li><li>Meta Ads</li><li>TikTok Shop</li><li>Shopee Live</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Instagram</li><li>TikTok</li><li>YouTube Shorts</li><li>Meta Ads</li><li>TikTok Shop</li><li>Shopee Live</li>
+        </ul>
       </div>
+    </div>
+  </div>
+</div>
 
-      <nav class="nav" aria-label="Navigasi utama">
-        <a href="#top" aria-label="Satu Poin, kembali ke atas"
-          ><img
-            class="logo"
-            src="/assets/img/logo-white.png"
-            width="400"
-            height="235"
-            alt="Satu Poin"
-        /></a>
-        <div class="navlinks">
-          <a href="#paket">Paket</a>
-          <a href="#alur">Alur Kerja</a>
-          <!-- <a href="#portfolio">Portfolio</a> -->
-          <a href="#faq">FAQ</a>
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="split">
+      <div class="ab-left">
+        <h2 class="h2 disp reveal">About</h2>
+        <div class="orbit reveal d1" aria-hidden="true">
+          <span class="orb-ripple"></span>
+          <span class="orb orb-1"><i></i></span>
+          <span class="orb orb-2"><i></i></span>
+          <span class="orb orb-3"><i></i></span>
+          <span class="orb-core"></span>
         </div>
-        <a
-          class="btn btn-light navcta"
-          data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-          href="https://wa.me/"
-          target="_blank"
-          rel="noopener"
-          >Chat WhatsApp<span class="ic"
-            ><svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-        ></a>
-        <button
-          class="menubtn"
-          type="button"
-          aria-label="Buka menu"
-          aria-expanded="false"
-          aria-controls="mobmenu"
-        >
-          <svg
-            class="i-open"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            aria-hidden="true"
-          >
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-          <svg
-            class="i-close"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            aria-hidden="true"
-          >
-            <path d="M6 6l12 12M18 6L6 18" />
-          </svg>
-        </button>
-      </nav>
-      <div class="mobmenu" id="mobmenu" hidden>
-        <a href="#paket">Paket</a>
-        <a href="#alur">Alur Kerja</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#faq">FAQ</a>
-        <a
-          class="btn btn-light"
-          data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-          href="https://wa.me/"
-          target="_blank"
-          rel="noopener"
-          >Chat WhatsApp<span class="ic"
-            ><svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-        ></a>
       </div>
+      <div class="reveal d1">
+        <p class="approach-p">Satu Poin adalah agensi media sosial yang membantu brand tumbuh lewat konten, iklan, dan KOL.</p>
+        <p class="ab-p">Nama kami datang dari cara kami bekerja: setiap brand punya satu tujuan utama, dan semua yang kami kerjakan diarahkan ke sana. Kami mulai dari riset audiens dan kalender konten, memproduksi, lalu membaca data setiap bulan untuk menentukan langkah berikutnya.</p>
+      </div>
+    </div>
+    <ul class="ab-grid">
+      <li class="ab-item">
+        <h3 class="disp">Satu tujuan, satu arah</h3>
+        <p>Konten, iklan, dan kampanye KOL disusun untuk target yang sama, bukan berjalan sendiri-sendiri.</p>
+      </li>
+      <li class="ab-item">
+        <h3 class="disp">Konsisten setiap hari</h3>
+        <p>Kalender konten yang jelas, posting terjadwal, dan komentar audiens yang ditanggapi.</p>
+      </li>
+      <li class="ab-item">
+        <h3 class="disp">Keputusan dari data</h3>
+        <p>Setiap laporan performa kami baca untuk menentukan apa yang dipertahankan dan apa yang diubah.</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-      <div class="hero-body">
+<section class="sec sec-tight" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="h2 disp">Services</h2>
+      <p class="muted">Layanan media sosial dari strategi sampai laporan. Ambil satu layanan, atau gabungkan beberapa sesuai kebutuhan brand Anda.</p>
+    </div>
+
+    <div class="sv-grid">
+      <article class="pk sv reveal">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span>
         <div>
-          <p class="hello fade-in">Halo, kami Satu Poin</p>
-          <h1 class="h1 disp">
-            <span class="line"><span>Agensi media</span></span
-            ><span class="line"><span>sosial yang</span></span
-            ><span class="line"><span>tepat sasaran</span></span>
-          </h1>
+          <h3 class="disp">Social Media Management</h3>
+          <p class="for">Kami kelola akun brand Anda setiap hari, dari rencana konten sampai membalas audiens.</p>
         </div>
-        <div class="hero-right fade-in">
-          <p class="lead disp">Satu fokus: brand Anda tumbuh.</p>
-          <p class="sub">
-            Kami mengelola Instagram, TikTok, dan iklan berbayar brand Anda,
-            mulai dari kalender konten sampai laporan performa setiap bulan.
-          </p>
-          <a
-            class="btn btn-light"
-            data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-            href="https://wa.me/"
-            target="_blank"
-            rel="noopener"
-            >Konsultasi via WhatsApp<span class="ic"
-              ><svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-          ></a>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>Instagram, TikTok, dan YouTube Shorts</li>
+          <li><span class="dot"></span>Content planning &amp; kalender bulanan</li>
+          <li><span class="dot"></span>Copywriting, riset hashtag &amp; SEO sosial</li>
+          <li><span class="dot"></span>Posting, scheduling &amp; daily story</li>
+          <li><span class="dot"></span>Community management: balas komentar &amp; DM</li>
+          <li><span class="dot"></span>Laporan performa mingguan atau bulanan</li>
+        </ul>
+      </article>
+      <article class="pk sv reveal d1">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg></span>
+        <div>
+          <h3 class="disp">Content Production</h3>
+          <p class="for">Konten feed dan video pendek yang siap tayang, diproduksi oleh tim kami.</p>
         </div>
-      </div>
-
-      <ul class="svc fade-in">
-        <li><span class="wdot"></span>Manajemen Instagram &amp; TikTok</li>
-        <li><span class="wdot"></span>Produksi konten video pendek</li>
-        <li><span class="wdot"></span>Meta Ads &amp; TikTok Ads</li>
-        <li><span class="wdot"></span>KOL &amp; live streaming</li>
-      </ul>
-    </header>
-
-    <main>
-      <div class="wrap">
-        <div class="strip">
-          <p class="strip-label">Platform yang kami kelola setiap hari</p>
-          <div class="marquee">
-            <div class="marquee-track">
-              <ul>
-                <li>Instagram</li>
-                <li>TikTok</li>
-                <li>YouTube Shorts</li>
-                <li>Meta Ads</li>
-                <li>TikTok Shop</li>
-                <li>Shopee Live</li>
-              </ul>
-              <ul aria-hidden="true">
-                <li>Instagram</li>
-                <li>TikTok</li>
-                <li>YouTube Shorts</li>
-                <li>Meta Ads</li>
-                <li>TikTok Shop</li>
-                <li>Shopee Live</li>
-              </ul>
-            </div>
-          </div>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>Feed, carousel &amp; static post</li>
+          <li><span class="dot"></span>Short video untuk Reels dan TikTok</li>
+          <li><span class="dot"></span>Photoshoot &amp; videoshoot produk</li>
+          <li><span class="dot"></span>Content creator / on-camera talent</li>
+        </ul>
+      </article>
+      <article class="pk sv reveal d2">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span>
+        <div>
+          <h3 class="disp">Ads Management</h3>
+          <p class="for">Setup dan pengelolaan iklan berbayar supaya budget iklan Anda bekerja lebih efektif.</p>
         </div>
-      </div>
-
-      <section class="sec">
-        <div class="wrap split">
-          <h2 class="h2 disp reveal">
-            Strategi yang jelas, konten yang konsisten, hasil yang terukur.
-          </h2>
-          <div class="reveal d1">
-            <p class="approach-p">
-              Setiap brand punya satu tujuan utama. Kami mulai dari situ: riset
-              audiens, menyusun kalender konten, memproduksi, lalu membaca data
-              setiap bulan untuk menentukan langkah berikutnya.
-            </p>
-            <div class="approach-row">
-              <p>Mulai dari satu obrolan tentang brand Anda.</p>
-              <a
-                class="btn btn-blue"
-                data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener"
-                >Chat WhatsApp<span class="ic"
-                  ><svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-              ></a>
-            </div>
-          </div>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>Meta Ads (Instagram &amp; Facebook)</li>
+          <li><span class="dot"></span>TikTok Ads</li>
+          <li><span class="dot"></span>Setup kampanye, targeting &amp; optimasi</li>
+          <li><span class="dot"></span>Laporan hasil iklan</li>
+        </ul>
+      </article>
+      <article class="pk sv reveal">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+        <div>
+          <h3 class="disp">Ad Creative Production</h3>
+          <p class="for">Visual dan video yang dibuat khusus untuk iklan konversi.</p>
         </div>
-      </section>
-
-      <section class="sec sec-tight" id="paket">
-        <div class="wrap">
-          <div class="sec-head reveal">
-            <h2 class="h2 disp">Pilih paket sesuai tahap brand Anda</h2>
-            <p class="muted">
-              Harga per bulan. Angka akhir menyesuaikan volume konten dan
-              kebutuhan brand, dan kami kirim penawarannya setelah konsultasi.
-            </p>
-          </div>
-
-          <div class="pk-grid">
-            <article class="pk reveal">
-              <div>
-                <h3 class="disp">Basic</h3>
-                <p class="for">
-                  Untuk brand yang ingin mulai konsisten di satu platform.
-                </p>
-              </div>
-              <p class="price disp">
-                Rp2.500.000 – Rp4.500.000<span class="per">per bulan</span>
-              </p>
-              <div class="pk-line"></div>
-              <ul class="list">
-                <li>
-                  <span class="dot"></span>1 platform (Instagram atau TikTok)
-                </li>
-                <li>
-                  <span class="dot"></span>12 konten feed / carousel per bulan
-                </li>
-                <li>
-                  <span class="dot"></span>4 short video (Reels / TikTok) per
-                  bulan
-                </li>
-                <li>
-                  <span class="dot"></span>Copywriting, riset hashtag &amp; SEO
-                  sosial
-                </li>
-                <li>
-                  <span class="dot"></span>Content planning &amp; kalender
-                  bulanan
-                </li>
-                <li><span class="dot"></span>Posting &amp; scheduling</li>
-                <li><span class="dot"></span>Laporan performa bulanan</li>
-              </ul>
-              <a
-                class="btn btn-blue"
-                data-wa="Halo Satu Poin, saya tertarik dengan paket Basic."
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener"
-                >Konsultasi paket Basic<span class="ic"
-                  ><svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-              ></a>
-            </article>
-
-            <article class="pk feat reveal d1">
-              <div class="pk-top">
-                <div>
-                  <h3 class="disp">Pro</h3>
-                  <p class="for">
-                    Untuk brand yang aktif di dua platform dan mulai beriklan.
-                  </p>
-                </div>
-                <span class="tag">Rekomendasi kami</span>
-              </div>
-              <p class="price disp">
-                Rp5.500.000 – Rp9.000.000<span class="per">per bulan</span>
-              </p>
-              <div class="pk-line"></div>
-              <ul class="list">
-                <li>
-                  <span class="dot"></span>2 platform (Instagram &amp; TikTok)
-                </li>
-                <li>
-                  <span class="dot"></span>8 carousel / static feed per bulan
-                </li>
-                <li>
-                  <span class="dot"></span>12 short video (Reels / TikTok) per
-                  bulan
-                </li>
-                <li>
-                  <span class="dot"></span>Daily story management, 1–2 story per
-                  hari
-                </li>
-                <li>
-                  <span class="dot"></span>Community management: balas komentar
-                  &amp; DM standar
-                </li>
-                <li>
-                  <span class="dot"></span>Setup &amp; manajemen iklan Meta Ads
-                  (budget iklan dari klien)
-                </li>
-                <li>
-                  <span class="dot"></span>Laporan &amp; analisis performa
-                  bulanan yang lengkap
-                </li>
-              </ul>
-              <a
-                class="btn btn-light"
-                data-wa="Halo Satu Poin, saya tertarik dengan paket Pro."
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener"
-                >Konsultasi paket Pro<span class="ic"
-                  ><svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-              ></a>
-            </article>
-
-            <article class="pk reveal d2">
-              <div>
-                <h3 class="disp">Scale-Up</h3>
-                <p class="for">
-                  Untuk brand yang siap tumbuh cepat lewat konten, iklan, dan
-                  KOL.
-                </p>
-              </div>
-              <p class="price disp">
-                Rp12.000.000 – Rp25.000.000+<span class="per">per bulan</span>
-              </p>
-              <div class="pk-line"></div>
-              <ul class="list">
-                <li>
-                  <span class="dot"></span>Multi-platform: Instagram, TikTok,
-                  YouTube Shorts
-                </li>
-                <li>
-                  <span class="dot"></span>16–20 short video (Reels / TikTok)
-                  per bulan
-                </li>
-                <li>
-                  <span class="dot"></span>Dedicated content creator / on-camera
-                  talent
-                </li>
-                <li>
-                  <span class="dot"></span>Photoshoot / videoshoot produk 1–2x
-                  per bulan
-                </li>
-                <li>
-                  <span class="dot"></span>Manajemen Meta Ads &amp; TikTok Ads
-                  kompleks
-                </li>
-                <li>
-                  <span class="dot"></span>Manajemen endorsement 3–5 micro KOL
-                  per bulan (di luar fee KOL)
-                </li>
-                <li>
-                  <span class="dot"></span>Host live streaming 2–4 jam per
-                  minggu
-                </li>
-                <li>
-                  <span class="dot"></span>Laporan performa mingguan &amp;
-                  evaluasi bulanan
-                </li>
-              </ul>
-              <a
-                class="btn btn-blue"
-                data-wa="Halo Satu Poin, saya tertarik dengan paket Scale-Up."
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener"
-                >Konsultasi paket Scale-Up<span class="ic"
-                  ><svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-              ></a>
-            </article>
-          </div>
-
-          <div class="addon">
-            <div class="addon-head reveal">
-              <h3 class="disp">Layanan tambahan</h3>
-              <p class="muted">Tambahkan sesuai kebutuhan kampanye Anda.</p>
-            </div>
-            <div class="reveal">
-              <div class="ad-row">
-                <p class="nm">KOL / Influencer Campaign</p>
-                <p class="ds">Riset, briefing, dan eksekusi kampanye KOL.</p>
-                <p class="pr">
-                  Rp2.000.000 – Rp5.000.000<small>per kampanye</small>
-                </p>
-              </div>
-              <div class="ad-row">
-                <p class="nm">Live Streaming Host</p>
-                <p class="ds">Host live shopping di TikTok dan Shopee.</p>
-                <p class="pr">Rp150.000 – Rp350.000<small>per jam</small></p>
-              </div>
-              <div class="ad-row">
-                <p class="nm">Ad Creative Production</p>
-                <p class="ds">
-                  3–5 variasi video atau visual khusus untuk iklan konversi.
-                </p>
-                <p class="pr">
-                  Rp1.500.000 – Rp3.500.000<small>per paket kreatif</small>
-                </p>
-              </div>
-              <div class="ad-row">
-                <p class="nm">KOL Management Fee</p>
-                <p class="ds">
-                  Riset 5–10 KOL, pembuatan brief, negosiasi, pengawasan
-                  posting, dan laporan performa.
-                </p>
-                <p class="pr">
-                  Rp1.500.000 – Rp4.000.000<small
-                    >per kampanye, atau komisi 10–20% dari total budget
-                    KOL</small
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>3–5 variasi kreatif per kampanye</li>
+          <li><span class="dot"></span>Video &amp; visual untuk Meta Ads dan TikTok Ads</li>
+          <li><span class="dot"></span>Variasi untuk dibandingkan performanya</li>
+        </ul>
+      </article>
+      <article class="pk sv reveal d1">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></span>
+        <div>
+          <h3 class="disp">KOL / Influencer Campaign</h3>
+          <p class="for">Kampanye bersama KOL dan micro influencer, dari mencari kreator sampai laporan hasil.</p>
         </div>
-      </section>
-
-      <section class="sec sec-tight" id="alur">
-        <div class="wrap">
-          <div class="sec-head reveal">
-            <h2 class="h2 disp">Cara kami bekerja</h2>
-            <p class="muted">
-              Lima langkah dari obrolan pertama sampai laporan bulanan.
-            </p>
-          </div>
-          <ol class="steps">
-            <li class="step">
-              <span class="num disp">1</span>
-              <div>
-                <h3 class="step-t">Konsultasi</h3>
-                <p class="step-d">
-                  Ceritakan brand, target, dan budget Anda lewat WhatsApp.
-                </p>
-              </div>
-            </li>
-            <li class="step">
-              <span class="num disp">2</span>
-              <div>
-                <h3 class="step-t">Riset &amp; strategi</h3>
-                <p class="step-d">
-                  Kami pelajari audiens dan kompetitor, lalu susun kalender
-                  konten.
-                </p>
-              </div>
-            </li>
-            <li class="step">
-              <span class="num disp">3</span>
-              <div>
-                <h3 class="step-t">Produksi</h3>
-                <p class="step-d">
-                  Shooting, editing, dan copywriting. Anda menyetujui sebelum
-                  konten tayang.
-                </p>
-              </div>
-            </li>
-            <li class="step">
-              <span class="num disp">4</span>
-              <div>
-                <h3 class="step-t">Publikasi &amp; iklan</h3>
-                <p class="step-d">
-                  Posting terjadwal, kelola komentar, dan jalankan iklan
-                  berbayar.
-                </p>
-              </div>
-            </li>
-            <li class="step">
-              <span class="num disp">5</span>
-              <div>
-                <h3 class="step-t">Laporan &amp; evaluasi</h3>
-                <p class="step-d">
-                  Laporan performa dan rencana perbaikan untuk bulan berikutnya.
-                </p>
-              </div>
-            </li>
-          </ol>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>Riset &amp; seleksi KOL yang sesuai brand</li>
+          <li><span class="dot"></span>Briefing &amp; negosiasi</li>
+          <li><span class="dot"></span>Pengawasan posting</li>
+          <li><span class="dot"></span>Laporan performa kampanye</li>
+        </ul>
+      </article>
+      <article class="pk sv reveal d2">
+        <span class="sv-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></span>
+        <div>
+          <h3 class="disp">Live Streaming Host</h3>
+          <p class="for">Host live shopping yang memandu siaran dan mengajak penonton berbelanja.</p>
         </div>
-      </section>
+        <div class="pk-line"></div>
+        <ul class="list">
+          <li><span class="dot"></span>TikTok Live &amp; Shopee Live</li>
+          <li><span class="dot"></span>Per jam atau jadwal rutin mingguan</li>
+        </ul>
+      </article>
+    </div>
 
-      <!-- <section class="sec sec-tight" id="portfolio">
+    <div class="sv-foot reveal">
+      <p>Butuh beberapa layanan sekaligus? Kami susun paket bulanan sesuai kebutuhan dan budget brand Anda.</p>
+      <a class="btn btn-light" data-wa="Halo Satu Poin, saya ingin konsultasi soal layanan media sosial untuk brand saya." href="https://wa.me/" target="_blank" rel="noopener">Konsultasi via WhatsApp<span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION ALUR KERJA (disembunyikan; hapus tanda komentar untuk menampilkan lagi) =====
+<section class="sec sec-tight" id="alur">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="h2 disp">Cara kami bekerja</h2>
+      <p class="muted">Lima langkah dari obrolan pertama sampai laporan bulanan.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="num disp">1</span><div><h3 class="step-t">Konsultasi</h3><p class="step-d">Ceritakan brand, target, dan budget Anda lewat WhatsApp.</p></div></li>
+      <li class="step"><span class="num disp">2</span><div><h3 class="step-t">Riset &amp; strategi</h3><p class="step-d">Kami pelajari audiens dan kompetitor, lalu susun kalender konten.</p></div></li>
+      <li class="step"><span class="num disp">3</span><div><h3 class="step-t">Produksi</h3><p class="step-d">Shooting, editing, dan copywriting. Anda menyetujui sebelum konten tayang.</p></div></li>
+      <li class="step"><span class="num disp">4</span><div><h3 class="step-t">Publikasi &amp; iklan</h3><p class="step-d">Posting terjadwal, kelola komentar, dan jalankan iklan berbayar.</p></div></li>
+      <li class="step"><span class="num disp">5</span><div><h3 class="step-t">Laporan &amp; evaluasi</h3><p class="step-d">Laporan performa dan rencana perbaikan untuk bulan berikutnya.</p></div></li>
+    </ol>
+  </div>
+</section>
+===== AKHIR SECTION ALUR KERJA ===== -->
+
+<!-- ===== SECTION PORTFOLIO (disembunyikan; hapus tanda komentar untuk menampilkan lagi) =====
+<section class="sec sec-tight" id="portfolio">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 class="h2 disp">Hasil kerja kami</h2>
@@ -592,9 +273,11 @@
       </article>
     </div>
   </div>
-</section> -->
+</section>
+===== AKHIR SECTION PORTFOLIO ===== -->
 
-      <!-- <section class="sec sec-tight">
+<!-- ===== SECTION TESTIMONI (disembunyikan; hapus tanda komentar untuk menampilkan lagi) =====
+<section class="sec sec-tight">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 class="h2 disp">Kata klien kami</h2>
@@ -614,240 +297,136 @@
       </figure>
     </div>
   </div>
-</section> -->
+</section>
+===== AKHIR SECTION TESTIMONI ===== -->
 
-      <section class="sec sec-tight" id="faq">
-        <div class="wrap faq">
-          <div class="faq-intro reveal">
-            <h2 class="h2 disp">Pertanyaan yang sering ditanyakan</h2>
-            <p class="muted">
-              Belum menemukan jawabannya? Tanyakan langsung ke tim kami.
-            </p>
-            <a
-              class="btn btn-blue"
-              data-wa="Halo Satu Poin, saya ingin bertanya."
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener"
-              >Tanya via WhatsApp<span class="ic"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-            ></a>
-          </div>
-          <div class="faq-list reveal d1">
-            <details open>
-              <summary>
-                Apakah budget iklan sudah termasuk harga paket?<span
-                  class="qic"
-                  aria-hidden="true"
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></span>
-              </summary>
-              <p class="ans">
-                Belum. Harga paket mencakup setup dan pengelolaan iklan. Budget
-                iklan yang dibayarkan ke Meta atau TikTok disiapkan langsung
-                oleh klien.
-              </p>
-            </details>
-            <details>
-              <summary>
-                Apakah fee KOL termasuk dalam paket Scale-Up?<span
-                  class="qic"
-                  aria-hidden="true"
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></span>
-              </summary>
-              <p class="ans">
-                Paket Scale-Up mencakup manajemen 3–5 micro KOL per bulan. Fee
-                yang dibayarkan ke KOL berada di luar harga paket.
-              </p>
-            </details>
-            <details>
-              <summary>
-                Kenapa harga paket berupa rentang?<span
-                  class="qic"
-                  aria-hidden="true"
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></span>
-              </summary>
-              <p class="ans">
-                Harga akhir menyesuaikan jumlah konten, tingkat kesulitan
-                produksi, dan industri brand Anda. Kami kirim penawaran pasti
-                setelah sesi konsultasi.
-              </p>
-            </details>
-            <details>
-              <summary>
-                Bisakah saya mengambil layanan tambahan saja?<span
-                  class="qic"
-                  aria-hidden="true"
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></span>
-              </summary>
-              <p class="ans">
-                [Isi kebijakan Anda: apakah layanan tambahan bisa diambil tanpa
-                paket bulanan.]
-              </p>
-            </details>
-            <details>
-              <summary>
-                Berapa lama minimal kerja sama?<span
-                  class="qic"
-                  aria-hidden="true"
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></span>
-              </summary>
-              <p class="ans">[Isi durasi kontrak minimal, mis. 3 bulan.]</p>
-            </details>
-          </div>
-        </div>
-      </section>
+<!-- ===== SECTION FAQ (disembunyikan; hapus tanda komentar untuk menampilkan lagi) =====
+<section class="sec sec-tight" id="faq">
+  <div class="wrap faq">
+    <div class="faq-intro reveal">
+      <h2 class="h2 disp">Pertanyaan yang sering ditanyakan</h2>
+      <p class="muted">Belum menemukan jawabannya? Tanyakan langsung ke tim kami.</p>
+      <a class="btn btn-blue" data-wa="Halo Satu Poin, saya ingin bertanya." href="https://wa.me/" target="_blank" rel="noopener">Tanya via WhatsApp<span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span></a>
+    </div>
+    <div class="faq-list reveal d1">
+      <details open>
+        <summary>Apakah budget iklan sudah termasuk harga paket?<span class="qic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="ans">Belum. Harga paket mencakup setup dan pengelolaan iklan. Budget iklan yang dibayarkan ke Meta atau TikTok disiapkan langsung oleh klien.</p>
+      </details>
+      <details>
+        <summary>Apakah fee KOL termasuk dalam paket Scale-Up?<span class="qic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="ans">Paket Scale-Up mencakup manajemen 3–5 micro KOL per bulan. Fee yang dibayarkan ke KOL berada di luar harga paket.</p>
+      </details>
+      <details>
+        <summary>Kenapa harga paket berupa rentang?<span class="qic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="ans">Harga akhir menyesuaikan jumlah konten, tingkat kesulitan produksi, dan industri brand Anda. Kami kirim penawaran pasti setelah sesi konsultasi.</p>
+      </details>
+      <details>
+        <summary>Bisakah saya mengambil layanan tambahan saja?<span class="qic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="ans">[Isi kebijakan Anda: apakah layanan tambahan bisa diambil tanpa paket bulanan.]</p>
+      </details>
+      <details>
+        <summary>Berapa lama minimal kerja sama?<span class="qic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="ans">[Isi durasi kontrak minimal, mis. 3 bulan.]</p>
+      </details>
+    </div>
+  </div>
+</section>
+===== AKHIR SECTION FAQ ===== -->
 
-      <section>
-        <div class="wrap">
-          <div class="cta reveal">
-            <div class="dots dots-cta" aria-hidden="true"></div>
-            <img
-              class="cta-mark"
-              src="/assets/img/mark.webp"
-              width="700"
-              height="828"
-              loading="lazy"
-              alt=""
-            />
-            <h2 class="h2 disp">
-              Ceritakan brand Anda. Kami bantu tentukan langkah pertamanya.
-            </h2>
-            <a
-              class="btn btn-light"
-              data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener"
-              >Chat WhatsApp<span class="ic"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg></span
-            ></a>
-          </div>
-        </div>
-      </section>
-    </main>
+<section id="contact">
+  <div class="wrap ct-wrap">
+    <div class="ct-panel ct-tag reveal">
+      <h2 class="sr-only">Contact</h2>
+      <div class="dots dots-tag" aria-hidden="true"></div>
+      <img class="tag-mark" src="/assets/img/mark.webp" alt="" loading="lazy">
+      <p class="tagline" data-type="Where Ideas Find|Their Center"><span class="sr-only">Where Ideas Find Their Center</span><span class="tg-text" aria-hidden="true">Where Ideas Find<br>Their Center</span></p>
+    </div>
 
-    <footer class="foot">
-      <div class="wrap">
-        <div class="foot-top">
-          <div class="foot-brand">
-            <img
-              class="logo"
-              src="/assets/img/logo-white.png"
-              width="400"
-              height="235"
-              alt="Satu Poin"
-            />
-            <p>
-              Agensi media sosial untuk brand yang ingin tumbuh lewat konten,
-              iklan, dan KOL.
-            </p>
-          </div>
-          <div>
-            <h4>Menu</h4>
-            <ul>
-              <li><a href="#paket">Paket</a></li>
-              <li><a href="#alur">Alur Kerja</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Kontak</h4>
-            <ul>
-              <li>
-                <a
-                  data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya."
-                  href="https://wa.me/"
-                  target="_blank"
-                  rel="noopener"
-                  >WhatsApp [Nomor]</a
-                >
-              </li>
-              <li><span>Instagram [@akun]</span></li>
-              <li><span>TikTok [@akun]</span></li>
-              <li><span>[email@domain.com]</span></li>
-            </ul>
-          </div>
+    <form class="ct-form reveal d1" id="contact-form" novalidate>
+      <p class="ct-form-title disp">Ada pertanyaan? Mari ngobrol.</p>
+      <div class="f-row">
+        <div class="f-field">
+          <label for="f-nama">Nama</label>
+          <input id="f-nama" name="nama" type="text" autocomplete="name" required placeholder="Nama Anda">
         </div>
-        <div class="foot-bot">
-          <span>© 2026 Satu Poin</span>
-          <span>[Kota, Indonesia]</span>
+        <div class="f-field">
+          <label for="f-brand">Nama brand <span class="opt">(opsional)</span></label>
+          <input id="f-brand" name="brand" type="text" autocomplete="organization" placeholder="Nama brand atau bisnis">
         </div>
       </div>
-    </footer>
+      <div class="f-row">
+        <div class="f-field">
+          <label for="f-wa">Nomor WhatsApp</label>
+          <input id="f-wa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="08xxxxxxxxxx">
+        </div>
+        <div class="f-field">
+          <label for="f-email">Email <span class="opt">(opsional)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="nama@email.com">
+        </div>
+      </div>
+      <div class="f-field">
+        <label for="f-akun">Akun media sosial brand <span class="opt">(opsional)</span></label>
+        <input id="f-akun" name="akun" type="text" placeholder="@namabrand">
+      </div>
+      <fieldset class="f-field f-chips">
+        <legend>Layanan yang diminati</legend>
+        <div class="chips">
+            <label class="chip"><input type="checkbox" name="layanan" value="Social Media Management"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Social Media Management</span></label>
+            <label class="chip"><input type="checkbox" name="layanan" value="Content Production"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Content Production</span></label>
+            <label class="chip"><input type="checkbox" name="layanan" value="Ads Management"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Ads Management</span></label>
+            <label class="chip"><input type="checkbox" name="layanan" value="Ad Creative Production"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Ad Creative Production</span></label>
+            <label class="chip"><input type="checkbox" name="layanan" value="KOL / Influencer Campaign"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>KOL / Influencer Campaign</span></label>
+            <label class="chip"><input type="checkbox" name="layanan" value="Live Streaming Host"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Live Streaming Host</span></label>
+        </div>
+      </fieldset>
+      <div class="f-field">
+        <label for="f-pesan">Pesan</label>
+        <textarea id="f-pesan" name="pesan" rows="4" placeholder="Ceritakan singkat tentang brand dan target Anda"></textarea>
+      </div>
+      <p class="f-error" id="f-error" role="alert" aria-live="polite"></p>
+      <div class="f-submit">
+        <button class="btn btn-blue" type="submit"><span class="btn-label">Submit</span><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+      <p class="f-success" id="f-success" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
 
-    <script src="/assets/js/main.js" defer></script>
-  </body>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="logo" src="/assets/img/logo-white.png" width="400" height="235" alt="Satu Poin">
+        <p>Agensi media sosial untuk brand yang ingin tumbuh lewat konten, iklan, dan KOL.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#alur">Alur Kerja</a></li> -->
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#faq">FAQ</a></li> -->
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li><a data-wa="Halo Satu Poin, saya ingin konsultasi soal media sosial brand saya." href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/satu.point/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:satupoint.agency@gmail.com">satupoint.agency@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Satu Poin</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
 </html>
